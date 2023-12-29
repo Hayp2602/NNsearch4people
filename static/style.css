@@ -26,29 +26,35 @@ main {
     text-align: left;
 }
 
-.upload-form {
-    margin-bottom: 20px;
+.button-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.custom-file-upload {
-    display: inline-block;
-    padding: 10px;
-    cursor: pointer;
+.custom-file-upload,
+button {
+    padding: 10px 20px;
+    font-size: 16px;
     background-color: #3498db;
     color: #fff;
     border: none;
     border-radius: 4px;
+    cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-.custom-file-upload:hover {
+.custom-file-upload:hover,
+button:hover {
     background-color: #2980b9;
 }
 
-button {
+.view-button {
+    margin-top: 10px; /* Добавлено расстояние между кнопками */
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #2ecc71;
+    background-color: #3498db;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -56,8 +62,8 @@ button {
     transition: background-color 0.3s ease;
 }
 
-button:hover {
-    background-color: #27ae60;
+.view-button:hover {
+    background-color: #2980b9;
 }
 
 .result {
